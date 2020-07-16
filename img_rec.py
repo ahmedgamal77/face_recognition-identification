@@ -52,7 +52,7 @@ def classify_face(img,flag):
 
 
 
-def learning(img):
+def learning(img): #take the path of the image & recognize the faces in it. if any face is not at the database it add it to the database and ask the user to identify the face
     
     image=fr.load_image_file(img)
     unkown_face_locations=fr.api.face_locations(image)
@@ -93,5 +93,5 @@ def learning(img):
 
   
 
-#print(classify_face("face.jpg",1))
+
 learning("kk.jpg")
